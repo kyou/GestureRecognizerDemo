@@ -24,6 +24,8 @@
 		9CA1D35F175D83B300CA1299 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D35E175D83B300CA1299 /* second@2x.png */; };
 		9CA1D362175D83B300CA1299 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D360175D83B300CA1299 /* FirstViewController.xib */; };
 		9CA1D365175D83B300CA1299 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D363175D83B300CA1299 /* SecondViewController.xib */; };
+		9CA1D36D175D8AAD00CA1299 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D36C175D8AAD00CA1299 /* ThirdViewController.m */; };
+		9CA1D36F175D92D200CA1299 /* mm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D36E175D92D200CA1299 /* mm.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,9 @@
 		9CA1D35E175D83B300CA1299 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		9CA1D361175D83B300CA1299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		9CA1D364175D83B300CA1299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		9CA1D36B175D8AAD00CA1299 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		9CA1D36C175D8AAD00CA1299 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		9CA1D36E175D92D200CA1299 /* mm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mm.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +105,12 @@
 				9CA1D34A175D83B300CA1299 /* AppDelegate.m */,
 				9CA1D352175D83B300CA1299 /* FirstViewController.h */,
 				9CA1D353175D83B300CA1299 /* FirstViewController.m */,
-				9CA1D355175D83B300CA1299 /* first.png */,
-				9CA1D357175D83B300CA1299 /* first@2x.png */,
+				9CA1D360175D83B300CA1299 /* FirstViewController.xib */,
 				9CA1D359175D83B300CA1299 /* SecondViewController.h */,
 				9CA1D35A175D83B300CA1299 /* SecondViewController.m */,
-				9CA1D35C175D83B300CA1299 /* second.png */,
-				9CA1D35E175D83B300CA1299 /* second@2x.png */,
-				9CA1D360175D83B300CA1299 /* FirstViewController.xib */,
 				9CA1D363175D83B300CA1299 /* SecondViewController.xib */,
+				9CA1D36B175D8AAD00CA1299 /* ThirdViewController.h */,
+				9CA1D36C175D8AAD00CA1299 /* ThirdViewController.m */,
 				9CA1D341175D83B300CA1299 /* Supporting Files */,
 			);
 			path = tabbedApp;
@@ -116,6 +119,11 @@
 		9CA1D341175D83B300CA1299 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9CA1D36E175D92D200CA1299 /* mm.jpg */,
+				9CA1D355175D83B300CA1299 /* first.png */,
+				9CA1D357175D83B300CA1299 /* first@2x.png */,
+				9CA1D35C175D83B300CA1299 /* second.png */,
+				9CA1D35E175D83B300CA1299 /* second@2x.png */,
 				9CA1D342175D83B300CA1299 /* tabbedApp-Info.plist */,
 				9CA1D343175D83B300CA1299 /* InfoPlist.strings */,
 				9CA1D346175D83B300CA1299 /* main.m */,
@@ -188,6 +196,7 @@
 				9CA1D35F175D83B300CA1299 /* second@2x.png in Resources */,
 				9CA1D362175D83B300CA1299 /* FirstViewController.xib in Resources */,
 				9CA1D365175D83B300CA1299 /* SecondViewController.xib in Resources */,
+				9CA1D36F175D92D200CA1299 /* mm.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +211,7 @@
 				9CA1D34B175D83B300CA1299 /* AppDelegate.m in Sources */,
 				9CA1D354175D83B300CA1299 /* FirstViewController.m in Sources */,
 				9CA1D35B175D83B300CA1299 /* SecondViewController.m in Sources */,
+				9CA1D36D175D8AAD00CA1299 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +307,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tabbedApp/tabbedApp-Prefix.pch";
 				INFOPLIST_FILE = "tabbedApp/tabbedApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -308,7 +320,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tabbedApp/tabbedApp-Prefix.pch";
 				INFOPLIST_FILE = "tabbedApp/tabbedApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

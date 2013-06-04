@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ThirdViewController.h
 //  tabbedApp
 //
 //  Created by Wayne Qiao on 13-6-4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@interface ThirdViewController : UIViewController
 
 @end

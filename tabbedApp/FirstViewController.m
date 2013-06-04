@@ -28,6 +28,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.textView.userInteractionEnabled = YES;
 }
 
 - (void)didReceiveMemoryWarning
