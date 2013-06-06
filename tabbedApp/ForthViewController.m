@@ -7,6 +7,7 @@
 //
 
 #import "ForthViewController.h"
+#import "CustomGestureRecognizer.h"
 
 @interface ForthViewController ()
 
@@ -26,13 +27,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    CustomGestureRecognizer* customGR = [[CustomGestureRecognizer alloc] initWithTarget:self action:@selector(handleCustom:)];
+    [self.view addGestureRecognizer:customGR];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)handleCustom:(CustomGestureRecognizer *)recognizer
+{
+    NSLog(@"handleCheckMark!");
 }
 
 @end

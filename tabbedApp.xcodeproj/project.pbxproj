@@ -28,6 +28,7 @@
 		9CA1D36F175D92D200CA1299 /* mm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D36E175D92D200CA1299 /* mm.jpg */; };
 		9CA1D373175F189800CA1299 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D371175F189800CA1299 /* ForthViewController.m */; };
 		9CA1D374175F189800CA1299 /* ForthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D372175F189800CA1299 /* ForthViewController.xib */; };
+		9CA1D377175F1A7000CA1299 /* CustomGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D376175F1A7000CA1299 /* CustomGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		9CA1D370175F189700CA1299 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		9CA1D371175F189800CA1299 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
 		9CA1D372175F189800CA1299 /* ForthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthViewController.xib; sourceTree = "<group>"; };
+		9CA1D375175F1A7000CA1299 /* CustomGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGestureRecognizer.h; sourceTree = "<group>"; };
+		9CA1D376175F1A7000CA1299 /* CustomGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				9CA1D370175F189700CA1299 /* ForthViewController.h */,
 				9CA1D371175F189800CA1299 /* ForthViewController.m */,
 				9CA1D372175F189800CA1299 /* ForthViewController.xib */,
+				9CA1D375175F1A7000CA1299 /* CustomGestureRecognizer.h */,
+				9CA1D376175F1A7000CA1299 /* CustomGestureRecognizer.m */,
 				9CA1D341175D83B300CA1299 /* Supporting Files */,
 			);
 			path = tabbedApp;
@@ -222,6 +227,7 @@
 				9CA1D35B175D83B300CA1299 /* SecondViewController.m in Sources */,
 				9CA1D36D175D8AAD00CA1299 /* ThirdViewController.m in Sources */,
 				9CA1D373175F189800CA1299 /* ForthViewController.m in Sources */,
+				9CA1D377175F1A7000CA1299 /* CustomGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
