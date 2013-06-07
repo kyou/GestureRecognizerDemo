@@ -30,6 +30,7 @@
 		9CA1D374175F189800CA1299 /* ForthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D372175F189800CA1299 /* ForthViewController.xib */; };
 		9CA1D377175F1A7000CA1299 /* CustomGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D376175F1A7000CA1299 /* CustomGestureRecognizer.m */; };
 		9CA1D37C17616D4D00CA1299 /* DoublePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D37B17616D4D00CA1299 /* DoublePanGestureRecognizer.m */; };
+		9CA1D37E17618F2600CA1299 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D37D17618F2600CA1299 /* ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		9CA1D376175F1A7000CA1299 /* CustomGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGestureRecognizer.m; sourceTree = "<group>"; };
 		9CA1D37A17616D4C00CA1299 /* DoublePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoublePanGestureRecognizer.h; sourceTree = "<group>"; };
 		9CA1D37B17616D4D00CA1299 /* DoublePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoublePanGestureRecognizer.m; sourceTree = "<group>"; };
+		9CA1D37D17618F2600CA1299 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				9CA1D363175D83B300CA1299 /* SecondViewController.xib */,
 				9CA1D36B175D8AAD00CA1299 /* ThirdViewController.h */,
 				9CA1D36C175D8AAD00CA1299 /* ThirdViewController.m */,
+				9CA1D37D17618F2600CA1299 /* ThirdViewController.xib */,
 				9CA1D370175F189700CA1299 /* ForthViewController.h */,
 				9CA1D371175F189800CA1299 /* ForthViewController.m */,
 				9CA1D372175F189800CA1299 /* ForthViewController.xib */,
@@ -216,6 +219,7 @@
 				9CA1D365175D83B300CA1299 /* SecondViewController.xib in Resources */,
 				9CA1D36F175D92D200CA1299 /* mm.jpg in Resources */,
 				9CA1D374175F189800CA1299 /* ForthViewController.xib in Resources */,
+				9CA1D37E17618F2600CA1299 /* ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

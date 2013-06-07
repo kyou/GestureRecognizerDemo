@@ -29,17 +29,18 @@
 {
     [super viewDidLoad];
     
-
+/*
     CustomGestureRecognizer* customGR = [[CustomGestureRecognizer alloc] initWithTarget:self action:@selector(handleCustom:)];
     [self.view addGestureRecognizer:customGR];
-/*
-    DoublePanGestureRecognizer* doublePanGR = [[DoublePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoublePan:)];
-    [self.view addGestureRecognizer:doublePanGR];
-*/
     
     UISwipeGestureRecognizer* swipeGR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     [self.view addGestureRecognizer:swipeGR];
     [swipeGR requireGestureRecognizerToFail:customGR];
+*/
+    DoublePanGestureRecognizer* doublePanGR = [[DoublePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoublePan:)];
+    [self.view addGestureRecognizer:doublePanGR];
+
+    
 }
 
 - (void)didReceiveMemoryWarning
