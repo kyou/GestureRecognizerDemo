@@ -31,6 +31,7 @@
 		9CA1D377175F1A7000CA1299 /* CustomGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D376175F1A7000CA1299 /* CustomGestureRecognizer.m */; };
 		9CA1D37C17616D4D00CA1299 /* DoublePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D37B17616D4D00CA1299 /* DoublePanGestureRecognizer.m */; };
 		9CA1D37E17618F2600CA1299 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA1D37D17618F2600CA1299 /* ThirdViewController.xib */; };
+		9CA1D3811761B16E00CA1299 /* GestureTraceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D3801761B16D00CA1299 /* GestureTraceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,8 @@
 		9CA1D37A17616D4C00CA1299 /* DoublePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoublePanGestureRecognizer.h; sourceTree = "<group>"; };
 		9CA1D37B17616D4D00CA1299 /* DoublePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoublePanGestureRecognizer.m; sourceTree = "<group>"; };
 		9CA1D37D17618F2600CA1299 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		9CA1D37F1761B16C00CA1299 /* GestureTraceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureTraceView.h; sourceTree = "<group>"; };
+		9CA1D3801761B16D00CA1299 /* GestureTraceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureTraceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				9CA1D352175D83B300CA1299 /* FirstViewController.h */,
 				9CA1D353175D83B300CA1299 /* FirstViewController.m */,
 				9CA1D360175D83B300CA1299 /* FirstViewController.xib */,
+				9CA1D37F1761B16C00CA1299 /* GestureTraceView.h */,
+				9CA1D3801761B16D00CA1299 /* GestureTraceView.m */,
 				9CA1D359175D83B300CA1299 /* SecondViewController.h */,
 				9CA1D35A175D83B300CA1299 /* SecondViewController.m */,
 				9CA1D363175D83B300CA1299 /* SecondViewController.xib */,
@@ -238,6 +243,7 @@
 				9CA1D373175F189800CA1299 /* ForthViewController.m in Sources */,
 				9CA1D377175F1A7000CA1299 /* CustomGestureRecognizer.m in Sources */,
 				9CA1D37C17616D4D00CA1299 /* DoublePanGestureRecognizer.m in Sources */,
+				9CA1D3811761B16E00CA1299 /* GestureTraceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
