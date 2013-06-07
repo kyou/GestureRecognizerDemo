@@ -10,4 +10,5 @@
 
 @interface ForthViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *centralLabel;
 @end

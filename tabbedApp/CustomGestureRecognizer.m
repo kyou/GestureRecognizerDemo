@@ -30,6 +30,17 @@
     strokeUp_ = NO;
 }
 
+// same behavior as the equivalent delegate methods, but can be used by subclasses to define class-wide prevention rules
+// for example, a UITapGestureRecognizer never prevents another UITapGestureRecognizer with a higher tap count
+- (BOOL)canPreventGestureRecognizer:(UIGestureRecognizer *)preventedGestureRecognizer
+{
+    NSLog(@"%s preventedGestureRecognizer:%@", __FUNCTION__, NSStringFromClass([preventedGestureRecognizer class]));
+    if ([preventedGestureRecognizer isKindOfClass:[UISwipeGestureRecognizer class]]) {
+        return YES;
+    }
+    return NO;
+}
+
 /*
 // same behavior as the equivalent delegate methods, but can be used by subclasses to define class-wide prevention rules
 // for example, a UITapGestureRecognizer never prevents another UITapGestureRecognizer with a higher tap count
@@ -60,7 +71,6 @@
         return;
     }
     
-
 //    UIWindow* window = self.view.window;
 //    CGPoint nowPoint = [touches.anyObject locationInView:window];
     CGPoint nowPoint = [touches.anyObject locationInView:self.view];

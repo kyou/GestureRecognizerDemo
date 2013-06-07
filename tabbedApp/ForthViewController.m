@@ -8,6 +8,7 @@
 
 #import "ForthViewController.h"
 #import "CustomGestureRecognizer.h"
+#import "DoublePanGestureRecognizer.h"
 
 @interface ForthViewController ()
 
@@ -28,8 +29,17 @@
 {
     [super viewDidLoad];
     
+
     CustomGestureRecognizer* customGR = [[CustomGestureRecognizer alloc] initWithTarget:self action:@selector(handleCustom:)];
     [self.view addGestureRecognizer:customGR];
+/*
+    DoublePanGestureRecognizer* doublePanGR = [[DoublePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoublePan:)];
+    [self.view addGestureRecognizer:doublePanGR];
+*/
+    
+    UISwipeGestureRecognizer* swipeGR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+    [self.view addGestureRecognizer:swipeGR];
+    [swipeGR requireGestureRecognizerToFail:customGR];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +51,24 @@
 - (void)handleCustom:(CustomGestureRecognizer *)recognizer
 {
     NSLog(@"handleCheckMark!");
+    
+    if (recognizer.state == UIGestureRecognizerStateRecognized) {
+        self.centralLabel.backgroundColor = [UIColor greenColor];
+    }
+}
+
+- (void)handleSwipe:(UISwipeGestureRecognizer *)recognizer
+{
+    NSLog(@"handleSwipe!");
+    
+    if (recognizer.state == UIGestureRecognizerStateRecognized) {
+        self.centralLabel.backgroundColor = [UIColor clearColor];
+    }
+}
+
+- (void)handleDoublePan:(CustomGestureRecognizer *)recognizer
+{
+    NSLog(@"handleDoublePan state:%d", recognizer.state);
 }
 
 @end
